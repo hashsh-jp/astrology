@@ -1,36 +1,222 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 株式会社Astrology 公式サイト
 
-## Getting Started
+自社開発の動画生成AIプロダクトを中核としたAIソリューション企業のコーポレートサイト
 
-First, run the development server:
+## 🎯 サイト概要
 
+### 目的
+- 自社開発の動画生成AIプロダクトの存在と世界観を伝える
+- 「受託開発会社」ではなく、AIプロダクトを開発・販売する会社であることを明確化
+- 公式LINEへの流入数を最大化
+
+### ターゲット
+- 中小企業の経営者・役員・事業責任者
+- 店舗オーナー・個人事業主
+- マーケティング担当・広報担当
+
+## 📄 ページ構成
+
+### 1. ホームページ (`/`)
+- **ヒーローセクション**: キャッチコピー「ビジネスを動かす、次世代の動画生成AI。」
+- **会社紹介**: Astrologyについての簡潔な説明
+- **提供サービス**: 3つの主要サービスを紹介
+- **選ばれる理由**: 4つの差別化ポイント
+- **導入の流れ**: 5ステップで導入プロセスを説明
+- **CTA**: 公式LINEへの誘導
+
+### 2. 会社概要 (`/about`)
+- **代表メッセージ**: 代表取締役 小池拓実からのメッセージ
+- **会社情報**: 基本情報をテーブル形式で表示
+- **アクセス**: 所在地とアクセス情報
+
+### 3. サービス (`/services`)
+- **動画生成AIプロダクト**: メインプロダクトの紹介
+- **運用・導入サポート**: サポート内容の詳細
+- **AI活用コンサルティング**: コンサルティング領域の説明
+- **導入の流れ**: 詳細な5ステップ
+- **料金について**: 個別見積り制の説明
+
+### 4. お問い合わせ (`/contact`)
+- **公式LINE誘導**: メインのお問い合わせ方法
+- **相談例**: 6つの具体的な相談例
+- **QRコード**: PC向けのQRコード表示
+- **代替連絡方法**: LINE以外の連絡方法
+
+## 🎨 デザイン仕様
+
+### カラーパレット
+- **Primary**: `#0B1020` (ダークネイビー)
+- **Accent**: `#00D9FF` (シアンブルー)
+- **LINE Green**: `#06C755` (LINEグリーン)
+
+### フォント
+- **日本語**: Noto Sans JP (400, 500, 700, 900)
+- **英数字**: Inter (400, 500, 600, 700, 800)
+
+### デザインコンセプト
+- 先進的・クール・信頼感
+- AIプロダクト企業としてのワクワク感
+- グラデーション効果とアニメーション
+
+## 🛠 技術スタック
+
+- **Framework**: Next.js 16.0.6 (App Router)
+- **React**: 19.2.0
+- **CSS**: Tailwind CSS 4
+- **TypeScript**: 5.x
+- **Deployment**: Vercel / Cloudflare Pages推奨
+
+## 🚀 開発環境のセットアップ
+
+### インストール
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 開発サーバーの起動
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開いてください。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ビルド
+```bash
+npm run build
+```
 
-## Learn More
+### 本番サーバーの起動
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 レスポンシブ対応
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+全ページでモバイル、タブレット、デスクトップに対応しています。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Mobile**: 〜767px
+- **Tablet**: 768px〜1023px
+- **Desktop**: 1024px〜
 
-## Deploy on Vercel
+## 🔍 SEO対策
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### メタタグ
+各ページに適切なtitle、description、keywordsを設定
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### OGタグ
+SNSシェア時の表示最適化
+
+### 構造化マークアップ
+H1〜H3の階層構造を適切に設定
+
+## ⚙️ カスタマイズ方法
+
+### LINE公式アカウントURLの設定
+
+`app/contact/page.tsx` の以下の部分を実際のLINE URLに変更してください：
+
+```typescript
+const LINE_URL = 'https://line.me/R/ti/p/@yourlineid';
+```
+
+### 会社情報の更新
+
+会社情報を変更する場合は、以下のファイルを編集してください：
+- `components/Footer.tsx`
+- `app/about/page.tsx`
+
+### カラーの変更
+
+`app/globals.css` のCSS変数を編集してカスタマイズできます：
+
+```css
+:root {
+  --primary: #0B1020;
+  --accent: #00D9FF;
+  --line-green: #06C755;
+}
+```
+
+## 📂 プロジェクト構造
+
+```
+/home/user/webapp/
+├── app/
+│   ├── about/
+│   │   └── page.tsx          # 会社概要ページ
+│   ├── services/
+│   │   └── page.tsx          # サービスページ
+│   ├── contact/
+│   │   └── page.tsx          # お問い合わせページ
+│   ├── globals.css           # グローバルスタイル
+│   ├── layout.tsx            # ルートレイアウト
+│   └── page.tsx              # ホームページ
+├── components/
+│   ├── Header.tsx            # ヘッダーコンポーネント
+│   └── Footer.tsx            # フッターコンポーネント
+└── public/
+    └── (静的ファイル)
+```
+
+## 🎯 主要機能
+
+### ナビゲーション
+- レスポンシブメニュー（モバイル/デスクトップ）
+- スムーズスクロール
+- アクティブリンク表示
+
+### アニメーション
+- グラデーション背景のアニメーション
+- ホバーエフェクト
+- スクロールインジケーター
+
+### CTA最適化
+- 公式LINEボタンを各ページに配置
+- 視認性の高いデザイン
+- モバイルフレンドリーな配置
+
+## 📊 パフォーマンス最適化
+
+- Next.jsのImage最適化
+- 遅延ローディング
+- コード分割
+- フォント最適化（Google Fonts）
+
+## 🔐 セキュリティ
+
+- HTTPS必須
+- 外部リンクに`rel="noopener noreferrer"`設定
+- XSS対策（Reactの自動エスケープ）
+
+## 🌐 デプロイ
+
+### Vercel（推奨）
+```bash
+vercel --prod
+```
+
+### Cloudflare Pages
+```bash
+npm run build
+# .next/static と out フォルダをデプロイ
+```
+
+## 📝 今後の拡張案
+
+- [ ] ブログ機能の追加
+- [ ] お知らせ機能の実装
+- [ ] 導入事例ページの追加
+- [ ] お問い合わせフォームの実装（LINE以外）
+- [ ] 多言語対応（英語版）
+- [ ] Google Analytics連携
+- [ ] LINE友だち追加計測用パラメータ
+
+## 📞 サポート
+
+ご質問やサポートが必要な場合は、公式LINEまたは会社へお問い合わせください。
+
+---
+
+**株式会社Astrology**  
+〒141-0032 東京都品川区大崎３丁目１−５ ルミネ五反田第２ 202号室  
+代表取締役：小池拓実
