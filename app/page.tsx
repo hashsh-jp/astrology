@@ -1,65 +1,269 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="bg-[#0B1020]">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        {/* Background Animation */}
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#00D9FF] rounded-full filter blur-[128px] animate-pulse"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#0088FF] rounded-full filter blur-[128px] animate-pulse delay-700"></div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto text-center space-y-8">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="block text-white mb-4">ビジネスを動かす、</span>
+              <span className="block bg-gradient-to-r from-[#00D9FF] via-[#0088FF] to-[#00D9FF] bg-clip-text text-transparent">
+                次世代の動画生成AI。
+              </span>
+            </h1>
+            
+            <p className="text-lg sm:text-xl md:text-2xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+              自社開発の動画生成AIを中核にした<br className="hidden sm:block" />
+              AIソリューション企業
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-8">
+              <Link 
+                href="/contact"
+                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-semibold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"
+              >
+                動画生成AIについて相談する
+              </Link>
+              <Link 
+                href="/services"
+                className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm text-white text-lg font-semibold rounded-full border-2 border-white/20 hover:bg-white/20 transition-all duration-300"
+              >
+                サービスを見る
+              </Link>
+            </div>
+          </div>
         </div>
-      </main>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-2">
+            <div className="w-1 h-2 bg-white/50 rounded-full"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-20 sm:py-32 bg-gradient-to-b from-[#0B1020] to-[#0F1528]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center space-y-6 mb-16">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+                Astrologyについて
+              </h2>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-white/10">
+              <p className="text-lg sm:text-xl text-white/80 leading-relaxed text-center">
+                株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">受託開発会社ではなく</span>、
+                <span className="text-[#00D9FF] font-semibold">自社開発の動画生成AIプロダクト</span>を中核とした
+                AIソリューション企業です。<br /><br />
+                品川区大崎を拠点に、次世代の動画マーケティングを実現する
+                革新的なAIテクノロジーを提供しています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 sm:py-32 bg-[#0F1528]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+              提供していること
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Service 1 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">動画生成AI</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                テキストや画像から動画を生成できる自社開発AIプロダクト。SNS動画、広告動画、紹介動画など幅広く対応。
+              </p>
+              <Link href="/services#ai-product" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Service 2 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">運用サポート</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                初期設定からテンプレート作成、運用アドバイスまで、AIプロダクトの利用をスムーズにする支援。
+              </p>
+              <Link href="/services#support" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Service 3 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">AI活用コンサル</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                動画生成AIを含むAI活用の全体設計支援。集客・販促・業務効率化などの活用例をご提案。
+              </p>
+              <Link href="/services#consulting" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 sm:py-32 bg-gradient-to-b from-[#0F1528] to-[#0B1020]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+              選ばれる理由
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {[
+              {
+                title: "完全自社開発",
+                description: "受託開発ではなく、自社で企画・開発した動画生成AIプロダクト",
+                icon: (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                )
+              },
+              {
+                title: "動画特化",
+                description: "動画マーケティングに特化したAI技術で、高品質な動画生成を実現",
+                icon: (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
+                )
+              },
+              {
+                title: "成果重視",
+                description: "単なるツール提供ではなく、ビジネス成果につながる活用支援",
+                icon: (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                )
+              },
+              {
+                title: "継続アップデート",
+                description: "最新のAI技術を取り入れた継続的なプロダクト改善",
+                icon: (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                )
+              }
+            ].map((feature, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <div className="w-12 h-12 bg-gradient-to-br from-[#00D9FF]/20 to-[#0088FF]/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-[#00D9FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {feature.icon}
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20 sm:py-32 bg-[#0B1020]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+              導入の流れ
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-6">
+              {[
+                { step: "01", title: "お問い合わせ", description: "公式LINEまたはお問い合わせフォームよりご連絡ください" },
+                { step: "02", title: "ヒアリング", description: "現状の課題や目標をお聞きし、最適な活用方法を検討します" },
+                { step: "03", title: "プラン提案", description: "貴社に合わせたプランと利用形態をご提案いたします" },
+                { step: "04", title: "利用開始", description: "アカウント発行・初期設定を行い、すぐに利用開始できます" },
+                { step: "05", title: "運用サポート", description: "継続的な運用フォローで、成果を最大化します" }
+              ].map((item, index) => (
+                <div key={index} className="flex items-start space-x-6 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-lg">{item.step}</span>
+                    </div>
+                  </div>
+                  <div className="flex-1 pt-3">
+                    <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                    <p className="text-white/60 leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 sm:py-32 bg-gradient-to-br from-[#0B1020] via-[#0F1528] to-[#0B1020] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#00D9FF] rounded-full filter blur-[128px]"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#0088FF] rounded-full filter blur-[128px]"></div>
+        </div>
+
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+              まずは「うちで何ができるか」を<br className="hidden sm:block" />
+              知るところから。
+            </h2>
+            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
+              動画生成AIの活用方法や、貴社に合ったプランについて<br className="hidden sm:block" />
+              お気軽にご相談ください。
+            </p>
+            <div className="pt-6">
+              <Link 
+                href="/contact"
+                className="inline-block px-10 py-5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"
+              >
+                公式LINEで相談する
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
