@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             {/* Contact Method */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-white/10 mb-12">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10 mb-12">
               <div className="text-center space-y-6">
                 <div className="inline-block p-4 bg-[#06C755]/20 rounded-2xl">
                   <svg className="w-16 h-16 text-[#06C755]" fill="currentColor" viewBox="0 0 24 24">

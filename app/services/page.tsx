@@ -34,7 +34,7 @@ export default function Services() {
       <section className="py-20 bg-gradient-to-b from-[#0B1020] to-[#0F1528]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">
                 サービス概要
               </h2>
@@ -266,7 +266,7 @@ export default function Services() {
               <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-white/10 text-center">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10 text-center">
               <div className="space-y-6">
                 <div className="inline-block px-6 py-3 bg-gradient-to-r from-[#00D9FF]/20 to-[#0088FF]/20 rounded-full border border-[#00D9FF]/30">
                   <p className="text-[#00D9FF] font-bold text-lg">個別見積り制</p>

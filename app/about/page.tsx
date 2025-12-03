@@ -40,7 +40,7 @@ export default function About() {
               <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-white/10">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
               <div className="space-y-6 text-white/80 leading-relaxed">
                 <p className="text-lg">
                   現代のビジネスにおいて、動画コンテンツは欠かせない存在となりました。
