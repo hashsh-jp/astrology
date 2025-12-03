@@ -153,17 +153,11 @@ export default function AISystemHero() {
           {/* Main Heading */}
           <div className={`text-center space-y-6 mb-12 transition-all duration-1000 delay-200 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              <span className="block text-white mb-2 font-mono tracking-tight">
-                NEXT-GEN
-              </span>
               <span className="block relative">
                 <span className="absolute inset-0 bg-gradient-to-r from-[#00D9FF] via-[#0088FF] to-[#00D9FF] blur-xl opacity-50" />
                 <span className="relative bg-gradient-to-r from-[#00D9FF] via-[#0088FF] to-[#00D9FF] bg-clip-text text-transparent animate-pulse">
-                  AI VIDEO
+                  Astrology
                 </span>
-              </span>
-              <span className="block text-white mt-2 font-mono tracking-tight">
-                GENERATION
               </span>
             </h1>
 
@@ -171,11 +165,11 @@ export default function AISystemHero() {
             <div className="relative inline-block">
               <div className="absolute inset-0 opacity-70">
                 <p className="text-xl sm:text-2xl md:text-3xl text-[#00D9FF] font-mono">
-                  &gt; ASTROLOGY_SYSTEM.EXE
+                  &gt; ASTROLOGY_2019.EXE
                 </p>
               </div>
               <p className="relative text-xl sm:text-2xl md:text-3xl text-[#00D9FF] font-mono animate-glitch">
-                &gt; ASTROLOGY_SYSTEM.EXE
+                &gt; ASTROLOGY_2019.EXE
               </p>
             </div>
           </div>
@@ -187,19 +181,13 @@ export default function AISystemHero() {
                 <div className="flex items-start space-x-3">
                   <span className="text-[#00D9FF] flex-shrink-0">&gt;</span>
                   <p className="text-white/90 text-lg">
-                    自社開発の動画生成AIプロダクト
+                    国内SNSに特化した生成AI
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="text-[#00D9FF] flex-shrink-0">&gt;</span>
                   <p className="text-white/90 text-lg">
-                    ビジネスを加速させる次世代AIソリューション
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-[#00D9FF] flex-shrink-0">&gt;</span>
-                  <p className="text-white/90 text-lg">
-                    東京・品川発、革新的テクノロジー企業
+                    令和に最適化された経営コンサルティング
                   </p>
                 </div>
               </div>
@@ -208,17 +196,6 @@ export default function AISystemHero() {
 
           {/* CTA Buttons */}
           <div className={`flex flex-col sm:flex-row items-center justify-center gap-6 transition-all duration-1000 delay-600 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <Link 
-              href="/contact"
-              className="group relative px-8 py-4 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#06C755]/50 hover:scale-105"
-            >
-              <span className="relative z-10 flex items-center space-x-2">
-                <span>CONTACT AI SYSTEM</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-            </Link>
             
             <Link 
               href="/services"
@@ -228,7 +205,7 @@ export default function AISystemHero() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span>VIEW SERVICES</span>
+                <span>サービス一覧</span>
               </span>
             </Link>
           </div>
@@ -260,7 +237,6 @@ export default function AISystemHero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center space-y-2">
-          <span className="text-[#00D9FF] text-xs font-mono">SCROLL</span>
           <div className="w-6 h-10 border-2 border-[#00D9FF]/50 rounded-full flex items-start justify-center p-2">
             <div className="w-1 h-2 bg-[#00D9FF] rounded-full animate-pulse" />
           </div>
