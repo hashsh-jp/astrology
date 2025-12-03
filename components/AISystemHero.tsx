@@ -187,7 +187,7 @@ export default function AISystemHero() {
                 <div className="flex items-start space-x-3">
                   <span className="text-[#00D9FF] flex-shrink-0">&gt;</span>
                   <p className="text-white/90 text-lg">
-                    令和に最適化された経営コンサルティング
+                    企業様向け経営コンサルティング
                   </p>
                 </div>
               </div>
