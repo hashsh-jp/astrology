@@ -79,7 +79,9 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">SNS運用サポート</h3>
               <p className="text-white/70 leading-relaxed mb-6">
-                初期設計からテンプレート作成、運用アドバイスまで、AIプロダクトの利用をスムーズにする支援。
+                マネタイズに向けて、
+                初期設計からテンプレート作成、投稿の書き方・販売の考え方までを丁寧にサポート。
+                収益化まで並走して進めていきます。
               </p>
               <Link href="/services#support" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
                 詳しく見る
