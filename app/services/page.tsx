@@ -39,7 +39,7 @@ export default function Services() {
                 サービス概要
               </h2>
               <p className="text-lg text-white/80 leading-relaxed text-center">
-                株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">自社開発の動画生成AI</span>を中核に、
+                株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">独自の生成AI</span>を中核に、
                 企業の動画マーケティングを加速させるトータルソリューションを提供しています。<br /><br />
                 単なるツール提供ではなく、導入支援から運用サポート、活用コンサルティングまで、
                 お客様のビジネス成果を最大化するための包括的なサービスをご用意しています。
