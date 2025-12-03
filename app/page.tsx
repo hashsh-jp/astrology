@@ -19,7 +19,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
-              <p className="text-lg sm:text-xl text-white/80 leading-relaxed text-center">
+              <p className="text-md sm:text-xl text-white/80 leading-relaxed text-center">
                 株式会社Astrologyは<br />
                 <span className="text-[#00D9FF] font-semibold">「独自開発の生成AIプロダクトの販売」</span><br />
                 <span className="text-[#00D9FF] font-semibold">「経営コンサルティング」</span><br />
