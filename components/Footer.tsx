@@ -59,7 +59,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#consulting" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
-                  AI活用コンサルティング
+                  経営コンサルティング
                 </Link>
               </li>
             </ul>

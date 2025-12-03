@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "株式会社Astrology | 動画生成AIプロダクト企業",
   description: "自社開発の動画生成AIを中核としたAIソリューション企業。ビジネスを動かす次世代の動画生成AIプロダクトを提供しています。",
-  keywords: ["動画生成AI", "AI開発", "AIプロダクト", "動画マーケティング", "AI活用コンサルティング"],
+  keywords: ["動画生成AI", "AI開発", "AIプロダクト", "動画マーケティング", "経営コンサルティング"],
   openGraph: {
     title: "株式会社Astrology | 動画生成AIプロダクト企業",
     description: "自社開発の動画生成AIを中核としたAIソリューション企業",

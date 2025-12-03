@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'サービス | 株式会社Astrology',
-  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、SNS運用サポート、AI活用コンサルティングをご提供しています。',
+  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、SNS運用サポート、経営コンサルティングをご提供しています。',
 };
 
 export default function Services() {
@@ -41,7 +41,7 @@ export default function Services() {
               <p className="text-lg text-white/80 leading-relaxed text-center">
                 株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">独自の生成AI</span>を中核に、
                 企業の動画マーケティングを加速させるトータルソリューションを提供しています。<br /><br />
-                単なるツール提供ではなく、導入支援から運用サポート、活用コンサルティングまで、
+                単なるツール提供ではなく、導入支援から運用サポート、経営コンサルティングまで、
                 お客様のビジネス成果を最大化するための包括的なサービスをご用意しています。
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">独自開発 生成AIプロダクト</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">独自生成AIプロダクト</h3>
               <p className="text-white/70 leading-relaxed mb-6">
                 動画生成AIを中心とした独自開発の生成AIプロダクトを販売。
                 SNS動画、広告、プロモーション、ブランディング用途まで幅広く対応します。
@@ -108,10 +108,10 @@ export default function Services() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">AI×経営コンサルティング</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">経営コンサルティング</h3>
               <p className="text-white/70 leading-relaxed mb-6">
-                AI導入設計・DX推進・集客導線・業務効率化まで、
-                経営視点でAI活用を最適化するコンサルティングを提供します。
+                事業戦略、組織設計、マーケティング/販売、オペレーション、財務/KPI設計まで、
+                経営の本質課題に向き合い、成果に直結する伴走型の支援を提供します。
               </p>
               <Link href="/services#consulting" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
                 詳しく見る
@@ -136,13 +136,13 @@ export default function Services() {
                     サービス 01
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    動画生成AIプロダクト
+                    生成AIプロダクト
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
                 </div>
 
                 <p className="text-lg text-white/80 leading-relaxed">
-                  テキストや画像などから高品質な動画を生成できる、完全自社開発のAIプロダクトです。
+                  テキストや画像などから高品質な動画を生成できる独自の生成AIプロダクトです。
                   複雑な編集作業は不要。直感的な操作で、プロ品質の動画コンテンツを短時間で制作できます。
                 </p>
 
@@ -227,24 +227,25 @@ export default function Services() {
                     サービス 03
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    AI活用コンサルティング
+                    経営コンサルティング
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
                 </div>
 
                 <p className="text-lg text-white/80 leading-relaxed">
-                  動画生成AIを含む、AI活用の全体設計を支援します。
-                  貴社のビジネス課題に合わせて、最適なAI活用戦略をご提案いたします。
+                  経営課題に対する実行可能な打ち手を、戦略からオペレーションまで一気通貫で設計し実行まで伴走します。
+                  現場に根ざしたプラクティカルな支援で、売上・利益・組織の健全性向上にコミットします。
                 </p>
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-white">コンサルティング領域</h3>
                   <div className="space-y-3">
                     {[
-                      { icon: '📈', title: '集客・販促', desc: 'SNS・広告での動画活用戦略' },
-                      { icon: '🎯', title: 'マーケティング', desc: 'コンテンツマーケティングの最適化' },
-                      { icon: '⚡', title: '業務効率化', desc: '動画制作プロセスの効率化' },
-                      { icon: '💡', title: '活用設計', desc: 'AI活用の全体戦略立案' }
+                      { icon: '📊', title: '事業戦略', desc: '市場分析・ポジショニング・成長戦略の策定' },
+                      { icon: '🧩', title: '組織設計・採用', desc: '組織デザイン、評価制度、採用戦略の構築' },
+                      { icon: '🎯', title: 'マーケティング/販売', desc: 'ファネル設計、価格戦略、営業プロセスの最適化' },
+                      { icon: '🛠️', title: '業務改善・オペレーション', desc: '業務プロセスの可視化・標準化・効率化' },
+                      { icon: '💹', title: '財務・KPI設計', desc: 'KPIツリー構築、予実管理、資金計画の整備' }
                     ].map((item, index) => (
                       <div key={index} className="flex items-start space-x-4 bg-white/5 rounded-lg p-4 border border-white/10">
                         <span className="text-3xl">{item.icon}</span>
