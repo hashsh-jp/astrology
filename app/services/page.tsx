@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'サービス | 株式会社Astrology',
-  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、運用・導入サポート、AI活用コンサルティングをご提供しています。',
+  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、SNS運用サポート、AI活用コンサルティングをご提供しています。',
 };
 
 export default function Services() {
@@ -23,7 +23,7 @@ export default function Services() {
             </h1>
             <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
             <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
-              動画生成AIを中核とした<br className="sm:hidden" />
+              独自生成AIを中核とした<br className="sm:hidden" />
               トータルソリューション
             </p>
           </div>
@@ -49,18 +49,86 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Services Cards Overview */}
+      <section className="py-20 bg-[#0F1528]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+              提供サービス
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Service 1 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">独自開発 生成AIプロダクト</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                動画生成AIを中心とした独自開発の生成AIプロダクトを販売。
+                SNS動画、広告、プロモーション、ブランディング用途まで幅広く対応します。
+              </p>
+              <Link href="/services#ai-product" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Service 2 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">SNS運用サポート</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                マネタイズに向けて、
+                初期設計からテンプレート作成、投稿の書き方・販売の考え方までを丁寧にサポート。
+                収益化まで並走して進めていきます。
+              </p>
+              <Link href="/services#support" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+
+            {/* Service 3 */}
+            <div className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-[#00D9FF]/50 transition-all duration-300 hover:transform hover:scale-105">
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00D9FF] to-[#0088FF] rounded-xl flex items-center justify-center mb-6 group-hover:shadow-lg group-hover:shadow-[#00D9FF]/50 transition-all duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">AI×経営コンサルティング</h3>
+              <p className="text-white/70 leading-relaxed mb-6">
+                AI導入設計・DX推進・集客導線・業務効率化まで、
+                経営視点でAI活用を最適化するコンサルティングを提供します。
+              </p>
+              <Link href="/services#consulting" className="text-[#00D9FF] hover:text-[#00AAFF] font-semibold inline-flex items-center group">
+                詳しく見る
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service 1: AI Product */}
       <section id="ai-product" className="py-20 bg-[#0F1528] scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="bg-gradient-to-br from-[#00D9FF]/20 to-[#0088FF]/20 rounded-2xl aspect-video flex items-center justify-center border border-[#00D9FF]/30">
-                  <svg className="w-24 h-24 text-[#00D9FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                  </svg>
-                </div>
-              </div>
 
               <div className="order-1 lg:order-2 space-y-6">
                 <div>
@@ -115,7 +183,7 @@ export default function Services() {
                     サービス 02
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    運用・導入サポート
+                    SNS運用サポート
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
                 </div>
@@ -142,14 +210,6 @@ export default function Services() {
                   </div>
                 </div>
               </div>
-
-              <div>
-                <div className="bg-gradient-to-br from-[#00D9FF]/20 to-[#0088FF]/20 rounded-2xl aspect-video flex items-center justify-center border border-[#00D9FF]/30">
-                  <svg className="w-24 h-24 text-[#00D9FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -160,13 +220,6 @@ export default function Services() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="bg-gradient-to-br from-[#00D9FF]/20 to-[#0088FF]/20 rounded-2xl aspect-video flex items-center justify-center border border-[#00D9FF]/30">
-                  <svg className="w-24 h-24 text-[#00D9FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                </div>
-              </div>
 
               <div className="order-1 lg:order-2 space-y-6">
                 <div>
@@ -278,8 +331,9 @@ export default function Services() {
 
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10">
                   <p className="text-white/70">
-                    「予算感だけ知りたい」「まずは話を聞いてみたい」という
-                    お問い合わせも大歓迎です。<br />
+                    「予算感だけ知りたい」<br/>
+                    「まずは話を聞いてみたい」<br/>
+                    まずは簡単なお問い合わせから<br/>
                     お気軽にご相談ください。
                   </p>
                 </div>

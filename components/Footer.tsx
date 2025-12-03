@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#support" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
-                  運用・導入サポート
+                  SNS運用サポート
                 </Link>
               </li>
               <li>
