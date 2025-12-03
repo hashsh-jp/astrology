@@ -181,7 +181,7 @@ export default function AISystemHero() {
                 <div className="flex items-start space-x-3">
                   <span className="text-[#00D9FF] flex-shrink-0">&gt;</span>
                   <p className="text-white/90 text-lg">
-                    国内SNSに特化した生成AI
+                    国内SNSに特化した独自の生成AI
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
