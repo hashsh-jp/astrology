@@ -44,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
-              提供していること
+              提供サービス
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
           </div>
