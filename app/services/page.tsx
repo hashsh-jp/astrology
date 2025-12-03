@@ -67,7 +67,7 @@ export default function Services() {
       <section id="ai-product" className="py-20 bg-[#0F1528] scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 gap-12 items-center">
 
               <div className="order-1 lg:order-2 space-y-6">
                 <div>
@@ -115,7 +115,7 @@ export default function Services() {
       <section id="support" className="py-20 bg-gradient-to-b from-[#0F1528] to-[#0B1020] scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 gap-12 items-center">
               <div className="space-y-6">
                 <div>
                   <div className="inline-block px-4 py-2 bg-[#00D9FF]/20 rounded-full text-[#00D9FF] text-sm font-semibold mb-4">
@@ -158,7 +158,7 @@ export default function Services() {
       <section id="consulting" className="py-20 bg-[#0B1020] scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 gap-12 items-center">
 
               <div className="order-1 lg:order-2 space-y-6">
                 <div>
