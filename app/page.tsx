@@ -213,19 +213,14 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
-              まずは「うちで何ができるか」を<br className="hidden sm:block" />
-              知るところから。
+              まずは「無料相談」から。
             </h2>
-            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
-              動画生成AIの活用方法や、貴社に合ったプランについて<br className="hidden sm:block" />
-              お気軽にご相談ください。
-            </p>
             <div className="pt-6">
               <Link 
                 href="/contact"
                 className="inline-block px-10 py-5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"
               >
-                公式LINEで相談する
+                お問い合わせはこちら
               </Link>
             </div>
           </div>
