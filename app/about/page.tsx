@@ -177,8 +177,16 @@ export default function About() {
               </div>
 
               {/* Google Maps Embed Area */}
-              <div className="mt-8 rounded-xl overflow-hidden border border-white/10 bg-white/5 aspect-video flex items-center justify-center">
-                <p className="text-white/40">Google Maps</p>
+              <div className="mt-8 rounded-xl overflow-hidden border border-white/10 bg-white/5 aspect-video">
+                <iframe
+                  title="Astrology 本社所在地"
+                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src={
+                    `https://www.google.com/maps?q=${encodeURIComponent('東京都品川区大崎3-1-5 ルミネ五反田第2 202号室')}&output=embed`
+                  }
+                />
               </div>
             </div>
           </div>
