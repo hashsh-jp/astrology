@@ -4,7 +4,7 @@ import ServicesGrid from '@/components/ServicesGrid';
 
 export const metadata: Metadata = {
   title: 'サービス | 株式会社Astrology',
-  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、ソーシャルメディア運用サポート、経営コンサルティング、海外マーケティングをご提供しています。',
+  description: '株式会社Astrologyのサービス紹介。AIエージェントシステムの構築・導入・サポート、ソーシャルメディア運用サポート、経営コンサルティング、海外マーケティングをご提供しています。',
 };
 
 export default function Services() {
@@ -35,14 +35,16 @@ export default function Services() {
       <section className="py-20 bg-gradient-to-b from-[#0B1020] to-[#0F1528]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6 text-center">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10 space-y-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 text-center">
                 サービス概要
               </h2>
               <p className="text-lg text-white/80 leading-relaxed text-center">
-                株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">独自の生成AI</span>を中核に、
-                企業の動画マーケティングを加速させるトータルソリューションを提供しています。<br /><br />
-                単なるツール提供ではなく、導入支援から運用サポート、経営コンサルティングまで、
+                株式会社Astrologyは、<span className="text-[#00D9FF] font-semibold">独自のAIエージェントシステム</span>を中核に、
+                企業の業務効率化と事業成長を加速させるトータルソリューションを提供しています。
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed text-center">
+                単なるツール提供ではなく、構築・導入支援から運用サポート、経営コンサルティングまで、
                 お客様のビジネス成果を最大化するための包括的なサービスをご用意しています。
               </p>
             </div>
@@ -63,8 +65,8 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Service 1: AI Product */}
-      <section id="ai-product" className="py-20 bg-[#0F1528] scroll-mt-20">
+      {/* Service 1: AI Agent System */}
+      <section id="ai-agent" className="py-20 bg-[#0F1528] scroll-mt-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 gap-12 items-center">
@@ -75,20 +77,21 @@ export default function Services() {
                     サービス 01
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    生成AIプロダクト
+                    AIエージェントシステム
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
                 </div>
 
                 <p className="text-lg text-white/80 leading-relaxed">
-                  テキストや画像などから高品質な動画を生成できる独自の生成AIプロダクトです。
-                  複雑な編集作業は不要。直感的な操作で、プロ品質の動画コンテンツを短時間で制作できます。
+                  貴社の業務課題に合わせて設計する独自のAIエージェントシステムです。
+                  要件のヒアリングから設計・構築、導入、そして導入後の運用サポートまでを一気通貫でご提供します。
+                  既存の業務フローに合わせて柔軟にカスタマイズできます。
                 </p>
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-white">主な用途</h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {['ソーシャルメディア動画', '広告動画', '紹介動画', 'マニュアル動画', 'プロモーション動画', 'ECサイト用動画'].map((item, index) => (
+                    {['カスタマー対応自動化', '社内問い合わせ対応', '営業・マーケティング支援', 'データ分析・レポート作成', '業務プロセス自動化', 'コンテンツ生成'].map((item, index) => (
                       <div key={index} className="flex items-center space-x-2 text-white/70">
                         <svg className="w-5 h-5 text-[#00D9FF] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -101,8 +104,8 @@ export default function Services() {
 
                 <div className="bg-white/5 rounded-xl p-6 border border-white/10">
                   <p className="text-sm text-white/60">
-                    ※ 具体的な機能や仕様については、お問い合わせ時に詳しくご説明いたします。
-                    貴社のニーズに合わせた最適な活用方法をご提案します。
+                    ※ 具体的な機能や対応可能な業務範囲については、お問い合わせ時に詳しくご説明いたします。
+                    貴社の業務内容に合わせた最適なAIエージェントをご提案します。
                   </p>
                 </div>
               </div>
@@ -128,7 +131,7 @@ export default function Services() {
                 </div>
 
                 <p className="text-lg text-white/80 leading-relaxed">
-                  動画生成AIの導入から運用まで、専門スタッフが手厚くサポートします。
+                  AIエージェントシステムの導入から運用まで、専門スタッフが手厚くサポートします。
                   初めてAIツールを導入する企業様でも、安心してご利用いただけます。
                 </p>
 

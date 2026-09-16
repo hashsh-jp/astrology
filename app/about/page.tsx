@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: '会社概要 | 株式会社Astrology',
-  description: '株式会社Astrologyの会社概要。自社開発の動画生成AIを中核としたAIソリューション企業として、次世代の動画マーケティングを実現します。',
+  description: '株式会社Astrologyの会社概要。自社開発のAIエージェントシステムを中核としたAIソリューション企業として、次世代の業務自動化を実現します。',
 };
 
 export default function About() {
@@ -22,7 +22,7 @@ export default function About() {
             </h1>
             <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
             <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto">
-              自社開発の動画生成AIで<br className="sm:hidden" />
+              自社開発のAIエージェントシステムで<br className="sm:hidden" />
               ビジネスの未来を創造する
             </p>
           </div>
@@ -43,26 +43,26 @@ export default function About() {
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
               <div className="space-y-6 text-white/80 leading-relaxed">
                 <p className="text-lg">
-                  現代のビジネスにおいて、動画コンテンツは欠かせない存在となりました。
-                  しかし、多くの企業が「動画を作りたいが、時間もコストもかかる」という課題に直面しています。
+                  現代のビジネスにおいて、AIの活用は欠かせない存在となりました。
+                  しかし、多くの企業が「AIを導入したいが、何から始めればいいか分からない」という課題に直面しています。
                 </p>
-                
+
                 <p className="text-lg">
                   株式会社Astrologyは、この課題をAIの力で解決します。
-                  私たちが開発した動画生成AIは、単なるツールではありません。
-                  企業のマーケティング活動を加速させ、ビジネスの成長を支援するパートナーです。
+                  私たちが開発するAIエージェントシステムは、単なるツールではありません。
+                  企業の業務プロセスを進化させ、ビジネスの成長を支援するパートナーです。
                 </p>
 
                 <p className="text-lg">
                   「AIを道具として、より多くの企業に届ける」
                   この思想のもと、私たちは受託開発ではなく、<span className="text-[#00D9FF] font-semibold">自社プロダクト</span>として
-                  動画生成AIを開発・提供しています。
+                  AIエージェントシステムを開発・提供しています。
                 </p>
 
                 <p className="text-lg">
                   継続的なアップデートと、お客様との対話を通じて、
                   常に進化し続けるプロダクトを目指しています。
-                  私たちと共に、次世代の動画マーケティングを実現しませんか。
+                  私たちと共に、次世代の業務自動化を実現しませんか。
                 </p>
 
                 <div className="pt-8 border-t border-white/20 mt-8">
@@ -125,7 +125,7 @@ export default function About() {
                       <ul className="space-y-2">
                         <li>• AI開発・販売</li>
                         <li>• 経営コンサルティング</li>
-                        <li>• 自社開発「動画生成AI」プロダクトの企画・開発・販売</li>
+                        <li>• 自社開発「AIエージェントシステム」の企画・開発・提供</li>
                       </ul>
                     </td>
                   </tr>
@@ -201,7 +201,7 @@ export default function About() {
               まずはお気軽にご相談ください
             </h2>
             <p className="text-white/70">
-              動画生成AIの活用方法や、導入についてのご質問など<br className="hidden sm:block" />
+              AIエージェントシステムの活用方法や、導入についてのご質問など<br className="hidden sm:block" />
               下記のお問い合わせ先よりお気軽にご連絡ください。
             </p>
             <Link 

@@ -5,11 +5,11 @@ export default function ServicesGrid() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
       {/* Service 1 */}
       <ServiceCard
-        title="独自開発 生成AIプロダクト"
+        title="独自開発 AIエージェントシステム"
         description={
-          '動画生成AIを中心とした独自開発の生成AIプロダクトを販売。\nソーシャルメディア動画、広告、プロモーション、ブランディング用途まで幅広く対応します。'
+          '業務課題に合わせて構築する独自のAIエージェントシステム。\n設計・導入から運用サポートまで、貴社の業務内容に合わせて幅広く対応します。'
         }
-        href="/services#ai-product"
+        href="/services#ai-agent"
         icon={
           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />

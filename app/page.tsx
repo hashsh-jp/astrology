@@ -22,15 +22,15 @@ export default function Home() {
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10 space-y-6 text-md sm:text-xl text-white/80 leading-relaxed">
               <p className="text-center">
                 株式会社Astrologyは<br />
-                <span className="text-[#00D9FF] font-semibold">「独自開発の生成AIプロダクトの販売」</span><br />
+                <span className="text-[#00D9FF] font-semibold">「独自開発のAIエージェントシステムの構築・導入」</span><br />
                 <span className="text-[#00D9FF] font-semibold">「経営コンサルティング」</span><br />
                 <span className="text-[#00D9FF] font-semibold">「ソーシャルメディア運営・マーケティング支援」</span><br />
                 3つの事業軸を展開するAIソリューション企業です。
               </p>
 
               <p>
-                独自開発の動画生成AIをはじめとする生成AIプロダクトの開発・販売を通じて、
-                企業のマーケティングと表現の在り方そのものを進化させるテクノロジーを提供しています。
+                独自開発のAIエージェントシステムの構築・導入から、導入後の運用サポートまでを通じて、
+                企業の業務プロセスや事業運営そのものを進化させるテクノロジーを提供しています。
               </p>
 
               <p>

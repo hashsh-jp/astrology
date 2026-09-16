@@ -12,7 +12,7 @@ export default function Footer() {
               Astrology
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              自社開発の動画生成AIを中核とした<br />
+              自社開発のAIエージェントシステムを中核とした<br />
               AIソリューション企業
             </p>
           </div>
@@ -54,8 +54,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg">サービス</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services#ai-product" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
-                  動画生成AIプロダクト
+                <Link href="/services#ai-agent" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
+                  AIエージェントシステム
                 </Link>
               </li>
               <li>

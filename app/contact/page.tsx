@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'お問い合わせ | 株式会社Astrology',
-  description: '株式会社Astrologyのお問い合わせ先をご案内します。動画生成AIに関するご相談、資料請求、導入相談など、お気軽にご連絡ください。',
+  description: '株式会社Astrologyのお問い合わせ先をご案内します。AIエージェントシステムの構築・導入に関するご相談、資料請求、導入相談など、お気軽にご連絡ください。',
 };
 
 export default function Contact() {
