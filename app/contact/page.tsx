@@ -6,8 +6,7 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  // ここに実際のLINE公式アカウントのURLを設定してください
-  const LINE_URL = 'https://line.me/R/ti/p/@yourlineid';
+  const LINE_URL = 'https://line.me/ti/p/pcVlZqu6-J';
 
   return (
     <div className="bg-[#0B1020] pt-20">

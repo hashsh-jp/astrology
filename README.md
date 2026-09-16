@@ -113,10 +113,10 @@ H1〜H3の階層構造を適切に設定
 
 ### LINE公式アカウントURLの設定
 
-`app/contact/page.tsx` の以下の部分を実際のLINE URLに変更してください：
+友だち追加リンクは `app/contact/page.tsx` に設定しています。変更時は以下のURLを更新してください：
 
 ```typescript
-const LINE_URL = 'https://line.me/R/ti/p/@yourlineid';
+const LINE_URL = 'https://line.me/ti/p/pcVlZqu6-J';
 ```
 
 ### 会社情報の更新
