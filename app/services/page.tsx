@@ -4,7 +4,7 @@ import ServicesGrid from '@/components/ServicesGrid';
 
 export const metadata: Metadata = {
   title: 'サービス | 株式会社Astrology',
-  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、SNS運用サポート、経営コンサルティングをご提供しています。',
+  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、ソーシャルメディア運用サポート、経営コンサルティングをご提供しています。',
 };
 
 export default function Services() {
@@ -88,7 +88,7 @@ export default function Services() {
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-white">主な用途</h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {['SNS動画', '広告動画', '紹介動画', 'マニュアル動画', 'プロモーション動画', 'ECサイト用動画'].map((item, index) => (
+                    {['ソーシャルメディア動画', '広告動画', '紹介動画', 'マニュアル動画', 'プロモーション動画', 'ECサイト用動画'].map((item, index) => (
                       <div key={index} className="flex items-center space-x-2 text-white/70">
                         <svg className="w-5 h-5 text-[#00D9FF] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -122,7 +122,7 @@ export default function Services() {
                     サービス 02
                   </div>
                   <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                    SNS運用サポート
+                    ソーシャルメディア運用サポート
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
                 </div>

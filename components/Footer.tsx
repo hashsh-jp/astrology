@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services#support" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
-                  SNS運用サポート
+                  ソーシャルメディア運用サポート
                 </Link>
               </li>
               <li>

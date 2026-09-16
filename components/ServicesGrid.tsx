@@ -7,7 +7,7 @@ export default function ServicesGrid() {
       <ServiceCard
         title="独自開発 生成AIプロダクト"
         description={
-          '動画生成AIを中心とした独自開発の生成AIプロダクトを販売。\nSNS動画、広告、プロモーション、ブランディング用途まで幅広く対応します。'
+          '動画生成AIを中心とした独自開発の生成AIプロダクトを販売。\nソーシャルメディア動画、広告、プロモーション、ブランディング用途まで幅広く対応します。'
         }
         href="/services#ai-product"
         icon={
@@ -19,7 +19,7 @@ export default function ServicesGrid() {
 
       {/* Service 2 */}
       <ServiceCard
-        title="SNS運用サポート"
+        title="ソーシャルメディア運用サポート"
         description={
           'マネタイズに向けて、\n初期設計からテンプレート作成、投稿の書き方・販売の考え方までを丁寧にサポート。\n収益化まで並走して進めていきます。'
         }
