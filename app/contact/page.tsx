@@ -80,12 +80,6 @@ export default function Contact() {
                   <svg className="w-5 h-5 text-[#00D9FF] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <p>営業時間内（平日10:00〜18:00）のお問い合わせには、当日中にご返信いたします。</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <svg className="w-5 h-5 text-[#00D9FF] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
                   <p>「まずは話を聞いてみたい」「資料だけ見たい」といった気軽なお問い合わせも大歓迎です。</p>
                 </div>
                 <div className="flex items-start space-x-3">
