@@ -19,26 +19,33 @@ export default function Home() {
               <div className="w-20 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF] mx-auto"></div>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10">
-              <p className="text-md sm:text-xl text-white/80 leading-relaxed text-center">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 sm:p-12 border border-white/10 space-y-6 text-md sm:text-xl text-white/80 leading-relaxed">
+              <p className="text-center">
                 株式会社Astrologyは<br />
                 <span className="text-[#00D9FF] font-semibold">「独自開発の生成AIプロダクトの販売」</span><br />
                 <span className="text-[#00D9FF] font-semibold">「経営コンサルティング」</span><br />
                 <span className="text-[#00D9FF] font-semibold">「ソーシャルメディア運営・マーケティング支援」</span><br />
-                3つの事業軸を展開する<br />
-                AIソリューション企業です。<br /><br />
+                3つの事業軸を展開するAIソリューション企業です。
+              </p>
 
+              <p>
                 独自開発の動画生成AIをはじめとする生成AIプロダクトの開発・販売を通じて、
-                企業のマーケティングと表現の在り方そのものを進化させるテクノロジーを提供しています。<br /><br />
+                企業のマーケティングと表現の在り方そのものを進化させるテクノロジーを提供しています。
+              </p>
 
+              <p>
                 さらに、AI活用・DX推進・事業設計に強みを持つ経営コンサルティング、
                 そしてソーシャルメディア運営・動画マーケティング支援までを一気通貫で行い、
-                「ツール」「戦略」「実行」をすべて内製で支援できる体制を構築しています。<br /><br />
+                「ツール」「戦略」「実行」をすべて内製で支援できる体制を構築しています。
+              </p>
 
+              <p>
                 広告費をかけないソーシャルメディアマーケティングによって高い利益率を実現しており、
                 その利益をソーシャルメディア広告やマーケティングにも活用することで、
-                来期以降の売上拡大につなげる仕組みを構築しています。<br /><br />
+                来期以降の売上拡大につなげる仕組みを構築しています。
+              </p>
 
+              <p>
                 また、台湾やタイ、インドネシア、ベトナムなどの親日国はもちろん、
                 アメリカやイギリス、フランス、スペインなど海外に向けて、
                 日本の文化や知識をソーシャルメディアを活用して宣伝・販売する海外マーケティング事業も展開しています。

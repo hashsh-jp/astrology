@@ -4,7 +4,7 @@ import ServicesGrid from '@/components/ServicesGrid';
 
 export const metadata: Metadata = {
   title: 'サービス | 株式会社Astrology',
-  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、ソーシャルメディア運用サポート、経営コンサルティングをご提供しています。',
+  description: '株式会社Astrologyのサービス紹介。動画生成AIプロダクト、ソーシャルメディア運用サポート、経営コンサルティング、海外マーケティングをご提供しています。',
 };
 
 export default function Services() {
@@ -148,6 +148,14 @@ export default function Services() {
                     ))}
                   </div>
                 </div>
+
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                  <p className="text-sm text-white/60">
+                    広告費をかけないソーシャルメディアマーケティングによって高い利益率を実現しており、
+                    その利益をソーシャルメディア広告やマーケティングにも活用することで、
+                    来期以降の売上拡大につなげる仕組みを構築しています。
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -192,6 +200,47 @@ export default function Services() {
                           <h4 className="text-white font-semibold mb-1">{item.title}</h4>
                           <p className="text-sm text-white/60">{item.desc}</p>
                         </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 4: Global Marketing */}
+      <section id="global-marketing" className="py-20 bg-gradient-to-b from-[#0B1020] to-[#0F1528] scroll-mt-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 gap-12 items-center">
+              <div className="space-y-6">
+                <div>
+                  <div className="inline-block px-4 py-2 bg-[#00D9FF]/20 rounded-full text-[#00D9FF] text-sm font-semibold mb-4">
+                    サービス 04
+                  </div>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    海外マーケティング
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-[#00D9FF] to-[#0088FF]"></div>
+                </div>
+
+                <p className="text-lg text-white/80 leading-relaxed">
+                  台湾やタイ、インドネシア、ベトナムなどの親日国はもちろん、アメリカやイギリス、フランス、スペインなど海外に向けて、
+                  日本の文化や知識をソーシャルメディアを活用して宣伝・販売する事業です。
+                  国内で培ったマーケティングノウハウを活かし、海外市場での新たな収益機会を創出します。
+                </p>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-white">主な展開エリア</h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {['台湾', 'タイ', 'インドネシア', 'ベトナム', 'アメリカ', 'イギリス', 'フランス', 'スペイン'].map((item, index) => (
+                      <div key={index} className="flex items-center space-x-2 text-white/70">
+                        <svg className="w-5 h-5 text-[#00D9FF] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span>{item}</span>
                       </div>
                     ))}
                   </div>

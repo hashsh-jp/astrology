@@ -68,6 +68,11 @@ export default function Footer() {
                   経営コンサルティング
                 </Link>
               </li>
+              <li>
+                <Link href="/services#global-marketing" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
+                  海外マーケティング
+                </Link>
+              </li>
             </ul>
           </div>
 
