@@ -138,7 +138,7 @@ export default function About() {
                         href="/contact"
                         className="inline-flex items-center text-[#00D9FF] hover:text-[#00AAFF] font-semibold transition-colors"
                       >
-                        代表者のLINE経由でお問い合わせ
+                        お問い合わせ先はこちら
                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
@@ -202,7 +202,7 @@ export default function About() {
             </h2>
             <p className="text-white/70">
               動画生成AIの活用方法や、導入についてのご質問など<br className="hidden sm:block" />
-              代表者のLINEでお気軽にお問い合わせください。
+              下記のお問い合わせ先よりお気軽にご連絡ください。
             </p>
             <Link 
               href="/contact"

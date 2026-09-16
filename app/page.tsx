@@ -67,7 +67,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
               {[
-                { step: "01", title: "お問い合わせ", description: "代表者のLINEまたはお問い合わせフォームよりご連絡ください" },
+                { step: "01", title: "お問い合わせ", description: "お問い合わせ先よりご連絡ください" },
                 { step: "02", title: "ヒアリング", description: "現状の課題や目標をお聞きし、最適な活用方法を検討します" },
                 { step: "03", title: "プラン提案", description: "貴社に合わせたプランと利用形態をご提案いたします" },
                 { step: "04", title: "利用開始", description: "アカウント発行・初期設定を行い、すぐに利用開始できます" },

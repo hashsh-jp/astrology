@@ -218,7 +218,7 @@ export default function Services() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
               {[
-                { num: '01', title: 'お問い合わせ', desc: '代表者のLINEまたはお問い合わせフォームからご連絡' },
+                { num: '01', title: 'お問い合わせ', desc: 'お問い合わせ先からご連絡' },
                 { num: '02', title: '現状ヒアリング', desc: '課題や目標、現状の動画活用状況をヒアリング' },
                 { num: '03', title: 'プラン提案', desc: '最適なプランと利用形態をご提案' },
                 { num: '04', title: 'ご契約・初期設定', desc: 'アカウント発行と初期設定をサポート' },
@@ -308,7 +308,7 @@ export default function Services() {
               href="/contact"
               className="inline-block px-10 py-5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"
             >
-              代表者のLINEで相談する
+              お問い合わせ先はこちら
             </Link>
           </div>
         </div>
