@@ -1,3 +1,4 @@
+import { LINE_CONTACT_URL } from '@/lib/contact';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -6,8 +7,6 @@ export const metadata: Metadata = {
 };
 
 export default function Contact() {
-  const LINE_URL = 'https://line.me/ti/p/pcVlZqu6-J';
-
   return (
     <div className="bg-[#0B1020] pt-20">
       {/* Hero Section */}
@@ -55,7 +54,7 @@ export default function Contact() {
 
                 <div className="pt-6">
                   <a
-                    href={LINE_URL}
+                    href={LINE_CONTACT_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"

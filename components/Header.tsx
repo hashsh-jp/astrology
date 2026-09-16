@@ -1,5 +1,6 @@
 'use client';
 
+import { LINE_CONTACT_URL } from '@/lib/contact';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -37,12 +38,14 @@ export default function Header() {
             >
               サービス
             </Link>
-            <Link 
-              href="/contact" 
+            <a
+              href={LINE_CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white rounded-full font-semibold hover:shadow-lg hover:shadow-[#06C755]/50 transition-all duration-300"
             >
               お問い合わせ
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,13 +96,15 @@ export default function Header() {
             >
               サービス
             </Link>
-            <Link 
-              href="/contact" 
+            <a
+              href={LINE_CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="block mx-4 px-6 py-2.5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-center rounded-full font-semibold"
               onClick={() => setIsMenuOpen(false)}
             >
               お問い合わせ
-            </Link>
+            </a>
           </div>
         )}
       </nav>

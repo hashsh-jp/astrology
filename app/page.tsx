@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { LINE_CONTACT_URL } from '@/lib/contact';
 import AISystemHero from '@/components/AISystemHero';
 import ServicesGrid from '@/components/ServicesGrid';
 
@@ -103,12 +103,14 @@ export default function Home() {
               「無料相談」はこちら
             </h2>
             <div className="pt-6">
-              <Link 
-                href="/contact"
+              <a
+                href={LINE_CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block px-10 py-5 bg-gradient-to-r from-[#06C755] to-[#05B04A] text-white text-lg font-bold rounded-full hover:shadow-2xl hover:shadow-[#06C755]/50 transition-all duration-300 transform hover:scale-105"
               >
                 お問い合わせはこちら
-              </Link>
+              </a>
             </div>
           </div>
         </div>

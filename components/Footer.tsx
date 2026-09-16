@@ -1,3 +1,4 @@
+import { LINE_CONTACT_URL } from '@/lib/contact';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -36,9 +37,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
+                <a
+                  href={LINE_CONTACT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm"
+                >
                   お問い合わせ
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -87,9 +93,14 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} 株式会社Astrology. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
-              <Link href="/contact" className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm">
+              <a
+                href={LINE_CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-[#00D9FF] transition-colors text-sm"
+              >
                 お問い合わせ
-              </Link>
+              </a>
             </div>
           </div>
         </div>

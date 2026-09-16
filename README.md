@@ -111,10 +111,10 @@ H1〜H3の階層構造を適切に設定
 
 ### お問い合わせ先URLの設定
 
-友だち追加リンクは `app/contact/page.tsx` に設定しています。変更時は以下のURLを更新してください：
+友だち追加リンクは `lib/contact.ts` で一元管理しています。トップページのボタン、ヘッダー（PC・スマートフォン）、フッターから直接LINEへ移動します。お問い合わせページのボタンも同じURLを参照します。変更時は以下のURLを更新してください：
 
 ```typescript
-const LINE_URL = 'https://line.me/ti/p/pcVlZqu6-J';
+export const LINE_CONTACT_URL = 'https://line.me/ti/p/pcVlZqu6-J';
 ```
 
 ### 会社情報の更新
