@@ -70,58 +70,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Contact Examples */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold text-white text-center mb-8">
-                このようなご相談をお待ちしています
-              </h3>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: '💬',
-                    title: '動画制作を効率化したい',
-                    desc: 'SNSや広告用の動画を、もっと短時間で制作したい'
-                  },
-                  {
-                    icon: '📱',
-                    title: 'SNS・広告で動画を使いたい',
-                    desc: '動画マーケティングを強化したいが、リソースが足りない'
-                  },
-                  {
-                    icon: '💡',
-                    title: 'AI活用の可能性を知りたい',
-                    desc: '自社でどの程度AI活用できるか、まずは話を聞きたい'
-                  },
-                  {
-                    icon: '📊',
-                    title: '導入事例や実績を知りたい',
-                    desc: '他社の活用事例や、効果について詳しく知りたい'
-                  },
-                  {
-                    icon: '💰',
-                    title: '料金について相談したい',
-                    desc: '予算感や、自社に合ったプランについて相談したい'
-                  },
-                  {
-                    icon: '🎯',
-                    title: 'デモを見てみたい',
-                    desc: '実際にどんな動画が作れるのか、デモを見たい'
-                  }
-                ].map((item, index) => (
-                  <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                    <div className="flex items-start space-x-4">
-                      <span className="text-4xl flex-shrink-0">{item.icon}</span>
-                      <div>
-                        <h4 className="text-white font-bold text-lg mb-2">{item.title}</h4>
-                        <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Additional Info */}
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10">
               <h3 className="text-xl font-bold text-white mb-4 text-center">
